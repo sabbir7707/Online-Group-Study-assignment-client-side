@@ -3,7 +3,6 @@ import Mainroute from "./Mainroute";
 
 import  Login from "../Page/Login";
 import  Register from "../Page/Register";
-import Contact from "../Page/Contact";
 import Home from "../Page/Home";
 import ErrorPage from "../Page/ErrorPage";
 import Create_Assignment from "../Public_private_page/create_assignment/Create_Assignment";
