@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/Authprovider";
-
+ import logo2 from "../assets/images/logo3.webp"
 
 const Navbar = () => {
     const { userr, logout } = useContext(AuthContext)
@@ -30,7 +30,9 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 text-xl font-bold text-primary">Clean Co</div>
+      <div className="flex-1 text-xl font-bold text-primary">
+        <img src={logo2} alt="" />
+      </div>
       <div className="flex-none hidden lg:block">
         <div className="flex items-center gap-2">
           {/* Navbar menu content here */}

@@ -1,6 +1,6 @@
 import { prototype } from "postcss/lib/previous-map";
 
-/* import logo2 from "../../assets/images/logo3.webp" */
+
 
 import Navbar from "../Navbar";
 import Saider from "../Saider";
