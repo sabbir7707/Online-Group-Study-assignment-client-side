@@ -42,30 +42,46 @@ const Navbar = () => {
           >
             Home
           </NavLink>
+
           <NavLink
-            to="/about"
+          to="/create_assignment"
+          className={({ isActive }) =>
+            isActive ? 'btn btn-primary ' : 'btn btn-ghost '
+          }
+        >
+         Create Assignment
+        </NavLink>
+
+
+          <NavLink
+            to="/my_assignment"
             className={({ isActive }) =>
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
-            About
+            MY Assignment
           </NavLink>
+          
           <NavLink
-            to="/contact"
+            to="/all_assignment"
             className={({ isActive }) =>
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
-            Contact
+            ALL Assignment
           </NavLink>
+
+
           <NavLink
-            to="/services"
+            to="/submitted_assignment"
             className={({ isActive }) =>
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
-            Services
+           Submitted Assignment
           </NavLink>
+
+
           {userr?.email ? (
             <div className="dropdown dropdown-end ">
               <label tabIndex={0} className="cursor-pointer">

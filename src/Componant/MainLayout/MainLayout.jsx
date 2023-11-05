@@ -1,14 +1,13 @@
 import { prototype } from "postcss/lib/previous-map";
-import { NavLink } from "react-router-dom";
-import logo2 from "../../assets/images/logo3.webp"
-import { useContext } from "react";
-import { AuthContext } from "../../Provider/Authprovider";
+
+/* import logo2 from "../../assets/images/logo3.webp" */
+
 import Navbar from "../Navbar";
 import Saider from "../Saider";
 
 
 const MainLayout = ({ children }) => {
-    const { userr, logout } = useContext(AuthContext)
+ 
     return (
         <div>
 

@@ -5,14 +5,16 @@ const Saider = () => {
     return (
         <div className="flex flex-col gap-2">
         {/* Navbar menu content here */}
+        
         <NavLink
-          to="/about"
+          to="/create_assignment"
           className={({ isActive }) =>
             isActive ? 'btn btn-primary ' : 'btn btn-ghost '
           }
         >
-          About
+         Create Assignment
         </NavLink>
+
         <NavLink
           to="/contact"
           className={({ isActive }) =>
