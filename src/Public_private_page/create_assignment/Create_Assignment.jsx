@@ -18,17 +18,17 @@ const Create_Assignment = () => {
 
         const title = form.title.value;
         const Description = form.Description.value;
-        const Marks = form.Marks.value;
-        const date = form.date.value;
-        const level= form.level.value;
-        const image = form.image.value;
+        const marks = form.marks.value;
+        const due_date = form.due_date.value;
+        const difficulty_level= form.difficulty_level.value;
+        const thumbnail_url = form.thumbnail_url.value;
 
-        const newproduct = { title,  Description, Marks,  date, image ,level}
+        const newproduct = { title,  Description,  marks,  due_date,  thumbnail_url ,difficulty_level}
         console.log(newproduct);
 
         const  toastId =toast.loading('ADD Assignment...')
 
-        fetch('http://localhost:5000/app/v1/user/addassignment', {
+        fetch('http://localhost:5000/app/v1/allassignment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -116,7 +116,7 @@ const Create_Assignment = () => {
                                         placeholder="Image Url "
                                         type="url"
                                         id="Url"
-                                        name='image'
+                                        name='thumbnail_url'
                                     />
                                 </div>
                                 {/* mark  level ar date  */}
@@ -132,7 +132,7 @@ const Create_Assignment = () => {
                                             placeholder="Marks"
                                             type="number"
                                             id="Marks"
-                                            name='Marks'
+                                            name='marks'
                                         />
                                     </div>
 
@@ -140,7 +140,7 @@ const Create_Assignment = () => {
 
                                     <div>  
                                         
-                                        <select name='level' className="select select-bordered w-full max-w-xs">
+                                        <select name='difficulty_level' className="select select-bordered w-full max-w-xs">
                                             <option disabled selected> Difficulty level</option>
                                             <option>easy</option>
                                             <option>medium</option>
@@ -158,7 +158,7 @@ const Create_Assignment = () => {
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="Marks"
                                             type="date"
-                                            name="date"
+                                            name="due_date"
                                         />
                                     </div>
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const All_assidnment_sgow = ({card}) => {
@@ -26,12 +27,23 @@ const All_assidnment_sgow = ({card}) => {
                               
                         
                        
-                        <div className="card-actions justify-end">
+                        <div className="card-actions justify-between">
                             
+                          <div>
+
+                            <h2 className="font-semibold"> <span className="font-bold text-red-600"> Level: </span>  {difficulty_level} </h2>
+                          </div>
+                          <div>
+                          <Link > 
                             <div className="badge badge-outline">Update</div>
+                            </Link>
 
                             <div className="badge badge-outline"> View</div>
+                          </div>
+
                         </div>
+
+
                     </div>
                 </div>
             </div>

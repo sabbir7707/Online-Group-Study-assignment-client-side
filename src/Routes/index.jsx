@@ -34,15 +34,16 @@ const router = createBrowserRouter([
         {
           path:'all_assignment',
           element:<All_assignment></All_assignment>,
-          loader:() => fetch('http://localhost:5000/app/v1/assignment') 
+          loader:() => fetch('http://localhost:5000/app/v1/allassignment') 
         },
         {
           path:'submitted_assignment',
           element: <Private_Route> <Submitted_Assignment></Submitted_Assignment></Private_Route> 
         },
         {
-          path:'update_assignment',
-          element: <Update_Assignment></Update_Assignment>
+          path:'update_assignment/:id',
+          element: <Update_Assignment></Update_Assignment>,
+          loader:({params}) => fetch(`http://localhost:5000/app/v1/allassignment${params.id}`)  
 
         }
       ]
