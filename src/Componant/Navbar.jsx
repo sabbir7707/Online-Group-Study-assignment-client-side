@@ -83,6 +83,15 @@ const Navbar = () => {
            Submitted Assignment
           </NavLink>
 
+          <NavLink
+            to="/update_assignment"
+            className={({ isActive }) =>
+              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+            }
+          >
+          update_assignment
+          </NavLink>
+
 
           {userr?.email ? (
             <div className="dropdown dropdown-end ">

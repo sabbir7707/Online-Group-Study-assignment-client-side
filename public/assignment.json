@@ -1,0 +1,188 @@
+[
+    {
+         
+        "title": "Math Assignment ",
+        "description": "Solve a set of algebraic equations and provide step-by-step explanations.",
+        "marks": 50,
+        "thumbnail_url": "https://i.ibb.co/d247NTR/flat-lay-composition-school-supplies.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-11-15"
+    },
+    {
+        "title": "Chemistry Lab Report",
+        "description": "Perform chemical experiments and report your findings.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/94VdWPC/laboratory-supplies-medical-work.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2023-11-20"
+    },
+
+    {
+        "title": "Sociology Essay",
+        "description": "Write an essay on a sociological topic of your choice.",
+        "marks": 45,
+        "thumbnail_url": "https://i.ibb.co/vxJwYkS/Sociology-students.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-11-30"
+    },
+    {
+        "title": "CSE Coding Assignment",
+        "description": "Write and test code for a computer science problem.",
+        "marks": 55,
+        "thumbnail_url": "https://i.ibb.co/xYCNpbs/luca-bravo-XJXWbf-So2f0-unsplash.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-12-05"
+    },
+    {
+        "title": "EEE Circuit Design Project",
+        "description": "Design an electrical circuit and submit a detailed project report.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/nP6wkYN/R.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2023-12-10"
+    },
+    {
+        "title": "Civil Engineering Design Task",
+        "description": "Design a civil engineering structure and provide engineering drawings.",
+        "marks": 65,
+        "thumbnail_url": "https://i.ibb.co/sWyPn47/top-view-composition-school-supplies.jpg",
+        "difficulty_level": "hard",
+        "due_date": "2023-12-15"
+    },
+    {
+        "title": "Mechanical Engineering Project",
+        "description": "Create a mechanical engineering project and provide technical specifications.",
+        "marks": 60,
+        "thumbnail_url": "https://i.ibb.co/1QKqWS8/architectural-blueprints.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-12-20"
+    },
+    {
+        "title": "CSE Assignment ",
+        "description": "Write code to solve a programming problem in CSE.",
+        "marks": 50,
+        "thumbnail_url": "https://i.ibb.co/xYCNpbs/luca-bravo-XJXWbf-So2f0-unsplash.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-11-15"
+    },
+    {
+        "title": "EEE Project Report ",
+        "description": "Submit a project report on an electrical and electronic engineering topic.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/nP6wkYN/R.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2023-11-20"
+    },
+    {
+        "title": "Civil Engineering Design Task ",
+        "description": "Design a civil engineering structure and provide engineering drawings.",
+        "marks": 60,
+        "thumbnail_url": "https://i.ibb.co/sWyPn47/top-view-composition-school-supplies.jpg",
+        "difficulty_level": "hard",
+        "due_date": "2023-11-25"
+    },
+    {
+        "title": "Mechanical Engineering Project 1",
+        "description": "Create a mechanical engineering project and provide technical specifications.",
+        "marks": 45,
+        "thumbnail_url": "https://i.ibb.co/thMbnLc/gettyimages-685688410-612x612.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-11-30"
+    },
+    {
+        "title": "CSE Assignment ",
+        "description": "Write code to solve a programming problem in CSE.",
+        "marks": 55,
+        "thumbnail_url": "https://i.ibb.co/xYCNpbs/luca-bravo-XJXWbf-So2f0-unsplash.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-12-05"
+    },
+    {
+        "title": "EEE Project Report ",
+        "description": "Submit a project report on an electrical and electronic engineering topic.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/nP6wkYN/R.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2023-12-10"
+    },
+    {
+        "title": "Civil Engineering Design Task ",
+        "description": "Design a civil engineering structure and provide engineering drawings.",
+        "marks": 65,
+        "thumbnail_url": "https://i.ibb.co/sWyPn47/top-view-composition-school-supplies.jpg",
+        "difficulty_level": "hard",
+        "due_date": "2023-12-15"
+    },
+    {
+        "title": "Mechanical Engineering Project ",
+        "description": "Create a mechanical engineering project and provide technical specifications.",
+        "marks": 60,
+        "thumbnail_url": "https://i.ibb.co/thMbnLc/gettyimages-685688410-612x612.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-12-20"
+    },
+    {
+        "title": "CSE Assignment ",
+        "description": "Write code to solve a programming problem in CSE.",
+        "marks": 50,
+        "thumbnail_url": "https://i.ibb.co/xYCNpbs/luca-bravo-XJXWbf-So2f0-unsplash.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2023-12-25"
+    },
+    {
+        "title": "EEE Project Report ",
+        "description": "Submit a project report on an electrical and electronic engineering topic.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/nP6wkYN/R.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2024-01-02"
+    },
+    {
+        "title": "Civil Engineering Design Task ",
+        "description": "Design a civil engineering structure and provide engineering drawings.",
+        "marks": 60,
+        "thumbnail_url": "https://i.ibb.co/sWyPn47/top-view-composition-school-supplies.jpg",
+        "difficulty_level": "hard",
+        "due_date": "2024-01-09"
+    },
+    {
+        "title": "Mechanical Engineering Project ",
+        "description": "Create a mechanical engineering project and provide technical specifications.",
+        "marks": 45,
+        "thumbnail_url": "https://i.ibb.co/thMbnLc/gettyimages-685688410-612x612.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2024-01-16"
+    },
+    {
+        "title": "CSE Assignment ",
+        "description": "Write code to solve a programming problem in CSE.",
+        "marks": 55,
+        "thumbnail_url": "https://i.ibb.co/xYCNpbs/luca-bravo-XJXWbf-So2f0-unsplash.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2024-01-23"
+    },
+    {
+        "title": "EEE Project Report ",
+        "description": "Submit a project report on an electrical and electronic engineering topic.",
+        "marks": 40,
+        "thumbnail_url": "https://i.ibb.co/nP6wkYN/R.jpg",
+        "difficulty_level": "easy",
+        "due_date": "2024-01-30"
+    },
+    {
+        "title": "Civil Engineering Design Task ",
+        "description": "Design a civil engineering structure and provide engineering drawings.",
+        "marks": 65,
+        "thumbnail_url": "https://i.ibb.co/sWyPn47/top-view-composition-school-supplies.jpg",
+        "difficulty_level": "hard",
+        "due_date": "2024-02-06"
+    },
+    {
+        "title": "Mechanical Engineering Project ",
+        "description": "Create a mechanical engineering project and provide technical specifications.",
+        "marks": 60,
+        "thumbnail_url": "https://i.ibb.co/thMbnLc/gettyimages-685688410-612x612.jpg",
+        "difficulty_level": "medium",
+        "due_date": "2024-02-13"
+    }
+]

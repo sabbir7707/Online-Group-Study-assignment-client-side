@@ -1,12 +1,57 @@
 
 
 
+import { useContext } from "react";
+import toast from "react-hot-toast";
+import { AuthContext } from "../../Provider/Authprovider";
+
 
 const Create_Assignment = () => {
+    
+    const {loding} = useContext(AuthContext)
 
 
+     const handelAddproduct = event => {
+        
+        event.preventDefault();
+        const form = event.target;
+
+        const title = form.title.value;
+        const Description = form.Description.value;
+        const Marks = form.Marks.value;
+        const date = form.date.value;
+        const level= form.level.value;
+        const image = form.image.value;
+
+        const newproduct = { title,  Description, Marks,  date, image ,level}
+        console.log(newproduct);
+
+        const  toastId =toast.loading('ADD Assignment...')
+
+        fetch('http://localhost:5000/app/v1/user/addassignment', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newproduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+
+                    
+                    toast.success('ADD Assignment', { id: toastId });
 
 
+                 
+                    window.location.reload()
+
+                }
+            })
+
+
+        }
 
 
     return (
@@ -27,7 +72,13 @@ const Create_Assignment = () => {
                         </div>
                         {/* ai  add part start now  */}
                         <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                            <form action="" className="space-y-4">
+
+
+                            {/*  form ar kage  */}
+                            <form 
+                                onSubmit={handelAddproduct}
+                            
+                            action="" className="space-y-4">
 
                                 {/* from start  */}
 
@@ -39,6 +90,7 @@ const Create_Assignment = () => {
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="Title"
                                             type="text"
+                                            name='title'
                                             id="title"
                                         />
                                     </div>
@@ -51,7 +103,7 @@ const Create_Assignment = () => {
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="Description"
                                             type="text"
-                                            id="Description"
+                                            name="Description"
                                         />
                                     </div>
                                 </div>
@@ -64,6 +116,7 @@ const Create_Assignment = () => {
                                         placeholder="Image Url "
                                         type="url"
                                         id="Url"
+                                        name='image'
                                     />
                                 </div>
                                 {/* mark  level ar date  */}
@@ -79,19 +132,21 @@ const Create_Assignment = () => {
                                             placeholder="Marks"
                                             type="number"
                                             id="Marks"
+                                            name='Marks'
                                         />
                                     </div>
 
                                     {/* defficalty */}
 
-                                    <div>
-                                        <select className="select select-bordered w-full max-w-xs">
+                                    <div>  
+                                        
+                                        <select name='level' className="select select-bordered w-full max-w-xs">
                                             <option disabled selected> Difficulty level</option>
                                             <option>easy</option>
                                             <option>medium</option>
                                             <option>hard</option>
                                         </select>
-
+                                        
 
                                     </div>
 
@@ -103,7 +158,7 @@ const Create_Assignment = () => {
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="Marks"
                                             type="date"
-                                            id="Marks"
+                                            name="date"
                                         />
                                     </div>
 
