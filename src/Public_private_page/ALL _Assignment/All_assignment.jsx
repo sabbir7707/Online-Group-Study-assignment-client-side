@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import All_assidnment_sgow from "./all_assignment_show";
-import { useEffect, useState } from "react";
 import Assignment_lavel from "./Assignment_lavel";
+import { useState } from "react";
 
 
 const All_assignment = () => {
@@ -12,7 +12,7 @@ const All_assignment = () => {
 
     /* paiginantion */
 
-        
+
 
 
 
@@ -22,12 +22,12 @@ const All_assignment = () => {
 
 
         <div className="mt-10">
-                       <Assignment_lavel></Assignment_lavel>
+            <Assignment_lavel></Assignment_lavel>
 
 
 
 
-                       
+
 
 
 
@@ -44,11 +44,11 @@ const All_assignment = () => {
                         setprodictess={setprodictess}
 
                         key={card._id}> </All_assidnment_sgow>
-                        
-                        )
+
+                    )
                 }
-            
-            
+
+
 
 
 
