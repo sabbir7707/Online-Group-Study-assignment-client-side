@@ -14,6 +14,7 @@ import Update_Assignment from "../Public_private_page/Update_assignment/Update_A
 import View_assignment from "../Public_private_page/View_assignment/View_assignment";
 import Assignment_lavel from "../Public_private_page/ALL _Assignment/Assignment_lavel";
 import Take_assignment from "../Public_private_page/View_assignment/Take_assignment";
+import All_assidnment_sgow from "../Public_private_page/ALL _Assignment/all_assignment_show";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
           path:'my_assignment',
           element:<Private_Route> <My_Assignment></My_Assignment></Private_Route> 
         },
+      
         {
           path:'all_assignment',
           element:<All_assignment></All_assignment>,

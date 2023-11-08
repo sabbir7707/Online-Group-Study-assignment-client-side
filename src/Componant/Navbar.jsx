@@ -54,7 +54,7 @@ const Navbar = () => {
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
-             Create Assignment
+            Create Assignment
           </NavLink>
 
 
@@ -85,13 +85,13 @@ const Navbar = () => {
               <label tabIndex={0} className="cursor-pointer">
                 <div className="avatar">
                   <div className="w-10 rounded-full">
-                  
-                    <img   src=  {userr?.photoURL?  userr?.photoURL :   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  }   />
-                   
+
+                    <img src={userr?.photoURL ? userr?.photoURL : "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+
 
                   </div>
 
-                  
+
                   {/* <h1 className="font-extrabold pr-2"> {userr?.displayName}</h1> */}
                 </div>
               </label>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink to="/my_assignment" className="px-4 py-2 hover:bg-base-300 rounded-lg" >
-                         My assignment
+                  My assignment
                 </NavLink>
 
 
@@ -121,7 +121,7 @@ const Navbar = () => {
             </div>
           ) : (
 
-            <div>
+            <div className=" sm:flex  ">
 
               <NavLink
                 to="/login"
