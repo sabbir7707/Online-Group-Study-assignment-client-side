@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/Authprovider";
- import logo2 from "../assets/images/logo3.webp"
+import logo2 from "../assets/images/logo3.webp"
 
 const Navbar = () => {
-    const { userr, logout } = useContext(AuthContext)
-    return (
+  const { userr, logout } = useContext(AuthContext)
+  return (
 
 
-<div className=" w-full max-w-[1250px] px-[25px] mx-auto">
+    <div className=" w-full max-w-[1250px] px-[25px] mx-auto">
       <div className="flex-none lg:hidden">
         <label
           htmlFor="my-drawer-3"
@@ -45,25 +45,19 @@ const Navbar = () => {
             Home
           </NavLink>
 
-          <NavLink
-          to="/create_assignment"
-          className={({ isActive }) =>
-            isActive ? 'btn btn-primary ' : 'btn btn-ghost '
-          }
-        >
-         Create Assignment
-        </NavLink>
+
 
 
           <NavLink
-            to="/my_assignment"
+            to="/create_assignment"
             className={({ isActive }) =>
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
-            MY Assignment
+             Create Assignment
           </NavLink>
-          
+
+
           <NavLink
             to="/all_assignment"
             className={({ isActive }) =>
@@ -74,23 +68,16 @@ const Navbar = () => {
           </NavLink>
 
 
-          <NavLink
-            to="/submitted_assignment"
-            className={({ isActive }) =>
-              isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
-            }
-          >
-           Submitted Assignment
-          </NavLink>
 
-          <NavLink
+
+          {/* <NavLink
             to="/update_assignment"
             className={({ isActive }) =>
               isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
             }
           >
           update_assignment
-          </NavLink>
+          </NavLink> */}
 
 
           {userr?.email ? (
@@ -98,26 +85,31 @@ const Navbar = () => {
               <label tabIndex={0} className="cursor-pointer">
                 <div className="avatar">
                   <div className="w-10 rounded-full">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  
+                    <img   src=  {userr?.photoURL?  userr?.photoURL :   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  }   />
+                   
+
                   </div>
+
+                  
+                  {/* <h1 className="font-extrabold pr-2"> {userr?.displayName}</h1> */}
                 </div>
               </label>
               <div
                 tabIndex={0}
                 className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <NavLink
-                  to="/user"
-                  className="px-4 py-2 hover:bg-base-300 rounded-lg"
-                >
-                  Profile
+
+
+                <NavLink to="/submitted_assignment"
+                  className="px-4 py-2 hover:bg-base-300 rounded-lg" >
+                  Submitted Assignment
                 </NavLink>
-                <NavLink
-                  to="/user/orders"
-                  className="px-4 py-2 hover:bg-base-300 rounded-lg"
-                >
-                  Orders
+
+                <NavLink to="/my_assignment" className="px-4 py-2 hover:bg-base-300 rounded-lg" >
+                         My assignment
                 </NavLink>
+
 
                 <div
                   onClick={logout}
@@ -128,21 +120,39 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <NavLink
-              to="/login"
-              className={({ isActive }) =>
-                isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
-              }
-            >
-              Login
-            </NavLink>
+
+            <div>
+
+              <NavLink
+                to="/login"
+                className={({ isActive }) =>
+                  isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+                }
+              >
+                Login
+              </NavLink>
+
+              <NavLink
+                to="/register"
+                className={({ isActive }) =>
+                  isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'
+                }
+              >
+                Register
+              </NavLink>
+
+
+
+            </div>
+
+
           )}
         </div>
       </div>
     </div>
-            
-       
-    );
+
+
+  );
 };
 
 export default Navbar;

@@ -11,6 +11,9 @@ import All_assignment from "../Public_private_page/ALL _Assignment/All_assignmen
 import Submitted_Assignment from "../Public_private_page/Submitted_assignment/Submitted_Assignment";
 import Private_Route from "./Private_Route";
 import Update_Assignment from "../Public_private_page/Update_assignment/Update_Assignment";
+import View_assignment from "../Public_private_page/View_assignment/View_assignment";
+import Assignment_lavel from "../Public_private_page/ALL _Assignment/Assignment_lavel";
+import Take_assignment from "../Public_private_page/View_assignment/Take_assignment";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +28,7 @@ const router = createBrowserRouter([
         },
         {
           path:'create_assignment',
-          element:<Create_Assignment></Create_Assignment>
+          element: <Private_Route> <Create_Assignment></Create_Assignment> </Private_Route> 
         },
         {
           path:'my_assignment',
@@ -38,14 +41,33 @@ const router = createBrowserRouter([
         },
         {
           path:'submitted_assignment',
-          element: <Private_Route> <Submitted_Assignment></Submitted_Assignment></Private_Route> 
+          element: <Private_Route> <Submitted_Assignment></Submitted_Assignment></Private_Route> ,
+          loader:() => fetch('http://localhost:5000/app/v1/addassignment') 
         },
         {
           path:'update_assignment/:id',
-          element: <Update_Assignment></Update_Assignment>,
-          loader:({params}) => fetch(`http://localhost:5000/app/v1/allassignment${params.id}`)  
+          element:  <Private_Route> <Update_Assignment></Update_Assignment> </Private_Route>,
+          loader:({params}) => fetch(`http://localhost:5000/app/v1/allassignment/${params.id}`)  
 
+        },
+        {
+          path:'view_assignment/:id',
+          element:  <Private_Route> <View_assignment></View_assignment> </Private_Route>,
+          loader:({params}) => fetch(`http://localhost:5000/app/v1/allassignment/${params.id}`)  
+
+        },
+        {
+          path:'/take_assignment',
+          element:<Take_assignment></Take_assignment>
         }
+
+
+       /*  {
+          path:'assignment_lavel/:difficulty_level',
+          element:  <Assignment_lavel></Assignment_lavel>,
+          loader:() => fetch('http://localhost:5000/app/v1/allassignment')  
+
+        } */
       ]
     },
     
@@ -57,6 +79,7 @@ const router = createBrowserRouter([
         path:'/register',
         element: <Register></Register>
       }
+      
     
   ]);
   export default router ;

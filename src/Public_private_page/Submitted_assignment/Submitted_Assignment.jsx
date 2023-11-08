@@ -1,11 +1,25 @@
+import { useLoaderData } from "react-router-dom";
+import Show_submitedpage from "./Show_submitedpage";
 
 
 const Submitted_Assignment = () => {
+    const loadedassignment = useLoaderData();
+
+
     return (
         <div>
-            <h2>submitted assignment </h2>
-            <h2>submitted assignment </h2>
-            <h2>submitted assignment </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+                {
+                    loadedassignment.map(card => <Show_submitedpage
+                        card={card}
+                       
+
+                        key={card._id}> </Show_submitedpage>
+                        
+                        )
+                }
+                </div>
         </div>
     );
 };

@@ -1,15 +1,14 @@
 
 
 
-import { useContext } from "react";
+
 import toast from "react-hot-toast";
-import { AuthContext } from "../../Provider/Authprovider";
+
 
 
 const Create_Assignment = () => {
     
-    const {loding} = useContext(AuthContext)
-
+ 
 
      const handelAddproduct = event => {
         
@@ -17,13 +16,13 @@ const Create_Assignment = () => {
         const form = event.target;
 
         const title = form.title.value;
-        const Description = form.Description.value;
+        const description = form.description.value;
         const marks = form.marks.value;
         const due_date = form.due_date.value;
         const difficulty_level= form.difficulty_level.value;
         const thumbnail_url = form.thumbnail_url.value;
 
-        const newproduct = { title,  Description,  marks,  due_date,  thumbnail_url ,difficulty_level}
+        const newproduct = { title,   description,  marks,  due_date,  thumbnail_url ,difficulty_level}
         console.log(newproduct);
 
         const  toastId =toast.loading('ADD Assignment...')
@@ -103,7 +102,7 @@ const Create_Assignment = () => {
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="Description"
                                             type="text"
-                                            name="Description"
+                                            name="description"
                                         />
                                     </div>
                                 </div>

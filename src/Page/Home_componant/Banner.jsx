@@ -23,15 +23,11 @@ const Banner = () => {
 
                             <div className="p-8 sm:p-16 lg:p-24">
                                 <h2 className="text-2xl font-bold sm:text-3xl">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-                                    debitis.
+                                Let is make the most of this group study assignment to enhance our understanding and excel academically. Together, we can achieve our goals
                                 </h2>
 
                                 <p className="mt-4 text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                                    molestiae! Quidem est esse numquam odio deleniti, beatae, magni
-                                    dolores provident quaerat totam eos, aperiam architecto eius quis
-                                    quibusdam fugiat dicta.
+                                Do not miss this opportunity to enhance your knowledge, make new friends, and excel academically! Together, we can achieve greater learning heights. See you in the virtual classroom!
                                 </p>
 
                                 <a

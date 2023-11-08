@@ -45,12 +45,14 @@ const Faq = () => {
                             <h1
                                 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
                             >
-                                Welcome  Online study 
+                                Welcome  Online  Study Grope Assignment
                             </h1>
 
                             <p className="mt-4 leading-relaxed text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
-                                dolorum aliquam, quibusdam aperiam voluptatum.
+                                Please be punctual and respectful of other is opinions and ideas.
+                                Active participation is key to a successful group study session.
+                                Feel free to ask questions and seek clarifications during the discussion.
+                                Let is create a positive and inclusive learning environment where everyone can contribute
                             </p>
                             {/* Faq */}
 
@@ -62,7 +64,7 @@ const Faq = () => {
                                 >
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5">
                                         <h2 className="text-lg font-medium text-gray-900">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing?
+                                            What is the purpose of this online group study assignment?
                                         </h2>
 
                                         <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -82,10 +84,7 @@ const Faq = () => {
                                     </summary>
 
                                     <p className="mt-4 leading-relaxed text-gray-700">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                        earum similique!
+                                        The primary goal of this assignment is to facilitate collaborative learning and enhance our understanding of the subject. We will work together to discuss key concepts, share resources, and prepare for exams or projects.
                                     </p>
                                 </details>
 
@@ -94,7 +93,7 @@ const Faq = () => {
                                 >
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5">
                                         <h2 className="text-lg font-medium text-gray-900">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing?
+                                            How will the online group study assignment be conducted?
                                         </h2>
 
                                         <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -114,10 +113,7 @@ const Faq = () => {
                                     </summary>
 
                                     <p className="mt-4 leading-relaxed text-gray-700">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                        earum similique!
+                                        We will meet on Insert Online Platform at the specified date and time. During the session, we will engage in discussions, share insights, and collaborate on various tasks related to the subject.
                                     </p>
                                 </details>
                                 <details
@@ -125,7 +121,7 @@ const Faq = () => {
                                 >
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5">
                                         <h2 className="text-lg font-medium text-gray-900">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing?
+                                            How will the group study assignment benefit me academically?
                                         </h2>
 
                                         <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -145,10 +141,7 @@ const Faq = () => {
                                     </summary>
 
                                     <p className="mt-4 leading-relaxed text-gray-700">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                                        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                                        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                                        earum similique!
+                                        By participating in this group study assignment, you will gain a deeper understanding of the subject, have the opportunity to ask questions, and benefit from different perspectives and insights. It can significantly enhance your learning experience.
                                     </p>
                                 </details>
 

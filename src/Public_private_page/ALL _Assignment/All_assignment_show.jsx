@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 
 
+
 const All_assidnment_sgow = ({card}) => {
-    console.log(card);
-    const  { title,  Description,  marks,  due_date,  thumbnail_url ,difficulty_level} = card
+
+
+ 
+    const  { _id, title,  description,  marks,  due_date,  thumbnail_url ,difficulty_level} = card
    
 
     return (
         <div>
+
+         
              <div>
             <div className="mt-2  mb-2">
                 <div className="card w-96 h-80  bg-base-100 shadow-xl">
@@ -34,11 +39,14 @@ const All_assidnment_sgow = ({card}) => {
                             <h2 className="font-semibold"> <span className="font-bold text-red-600"> Level: </span>  {difficulty_level} </h2>
                           </div>
                           <div>
-                          <Link > 
+                          <Link to={`/update_assignment/${_id}`} > 
                             <div className="badge badge-outline">Update</div>
                             </Link>
 
-                            <div className="badge badge-outline"> View</div>
+                            <Link to={`/view_assignment/${_id}`} > 
+                            <div className="badge badge-outline">view</div>
+                            </Link>
+
                           </div>
 
                         </div>
@@ -47,7 +55,7 @@ const All_assidnment_sgow = ({card}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
         </div>
     );
 };
