@@ -27,7 +27,7 @@ const Create_Assignment = () => {
 
         const  toastId =toast.loading('ADD Assignment...')
 
-        fetch('http://localhost:5000/app/v1/allassignment', {
+        fetch('https://online-goup-stady-server.vercel.app/app/v1/allassignment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

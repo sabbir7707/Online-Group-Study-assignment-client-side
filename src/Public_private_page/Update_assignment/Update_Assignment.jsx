@@ -23,7 +23,7 @@ const Update_Assignment = () => {
         console.log(newproduct);
 
         const  toastId =toast.loading('Update assignment ')
-        fetch(`http://localhost:5000/app/v1/allassignment/${_id}`, {
+        fetch(`https://online-goup-stady-server.vercel.app/app/v1/allassignment/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -14,7 +14,7 @@ const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
     const  toastId =toast.loading('DELETE ...')
 
     console.log('delet confriom')
-    fetch(`http://localhost:5000/app/v1/allassignment/${_id}`, {
+    fetch(`https://online-goup-stady-server.vercel.app/app/v1/allassignment/${_id}`, {
       method: 'Delete'
     })
       .then(res => res.json())
