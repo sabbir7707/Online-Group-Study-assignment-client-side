@@ -7,23 +7,64 @@ const Show_submitedpage = ({card}) => {
     const { pdf_link,  textarea } =  card
     return (
         <div>
-              <div className="dark:bg-gray-800 dark:text-gray-100">
-	<div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
-		<div className="flex items-center justify-between">
-			
-			{/* <a rel="noopener noreferrer" href="#" className="px-2 py-1 font-bold rounded dark:bg-violet-400 dark:text-gray-900">{userr?.displayName}</a> */}
-		</div>
-		<div className="mt-3">
-			<a rel="noopener noreferrer" href="#" className="text-sm font-bold hover:underline">{pdf_link}</a>
-			<p className="mt-2">{textarea}</p>
-		</div>
 
-		<div className="flex items-center justify-between mt-4">
-			<a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more</a>
-		</div>
+			{/*
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+*/}
+
+<article
+  className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6"
+>
+  <span className="inline-block rounded bg-blue-600 p-2 text-white">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path d="M12 14l9-5-9-5-9 5 9 5z" />
+      <path
+        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+      />
+    </svg>
+  </span>
+
+  <a href="#">
+    <h1 className="mt-0.5 text-sm font-medium text-gray-900">
+    {pdf_link}
+    </h1>
+  </a>
+
+  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+    {textarea }
+  </p>
+
+  <a
+    href="#"
+    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+  >
+    Find out more
+
+    <span
+      aria-hidden="true"
+      className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+    >
+      &rarr;
+    </span>
+  </a>
+</article>
+            
         
-	</div>
-</div>
+
         </div>
     );
 };

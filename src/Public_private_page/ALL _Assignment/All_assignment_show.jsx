@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-
+import toast from "react-hot-toast";
 
 const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
 
@@ -11,6 +11,7 @@ const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
   const handeleDelete = _id => {
 
     console.log(_id);
+    const  toastId =toast.loading('DELETE ...')
 
     console.log('delet confriom')
     fetch(`http://localhost:5000/app/v1/allassignment/${_id}`, {
@@ -24,6 +25,8 @@ const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
           const remaning = prodictess.filter(pro => pro._id !== _id)
 
           setprodictess(remaning);
+          toast.success('DELETE', { id: toastId });
+
           window.location.reload();
 
 
