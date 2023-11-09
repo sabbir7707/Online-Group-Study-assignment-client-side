@@ -7,7 +7,7 @@ import { AuthContext } from "../../Provider/Authprovider";
 const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
   const {userr}=useContext(AuthContext)
   const email=userr?.email
-  console.log("card mail ",card.email);
+
 
 
 

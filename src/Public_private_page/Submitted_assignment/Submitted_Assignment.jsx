@@ -4,6 +4,7 @@ import Show_submitedpage from "./Show_submitedpage";
 
 const Submitted_Assignment = () => {
     const loadedassignment = useLoaderData();
+    console.log(loadedassignment);
 
 
     return (

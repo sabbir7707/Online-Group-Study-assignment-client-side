@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
  import './pgbutton.css';
 const All_assignment = () => {
-    
+
 
     const [products, setProducts] = useState([]);
     const cart = useLoaderData();
@@ -31,13 +31,13 @@ const All_assignment = () => {
 
 
        useEffect( () =>{
-        fetch('http://localhost:5000/app/v1/pgassignment')
+        fetch('https://online-goup-stady-server.vercel.app/app/v1/pgassignment')
         .then(res => res.json())
         .then(data => setCount(data.count))
     }, [])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/app/v1/allassignment?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://online-goup-stady-server.vercel.app/app/v1/allassignment?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [currentPage, itemsPerPage]);
@@ -89,31 +89,11 @@ const All_assignment = () => {
         }
     }
 
-
-
-
-
-
-
-
-
     return (
 
 
         <div className="mt-10">
             {/* <Assignment_lavel></Assignment_lavel> */}
-
-
-
-
-
-
-
-
-
-
-
-
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
 

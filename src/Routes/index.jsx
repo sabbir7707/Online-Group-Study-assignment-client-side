@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         {
           path:'submitted_assignment',
           element: <Private_Route> <Submitted_Assignment></Submitted_Assignment></Private_Route> ,
-          loader:() => fetch('https://online-goup-stady-server.vercel.app/app/v1/addassignment') 
+          loader:() => fetch('https://online-goup-stady-server.vercel.app/app/v1/submited') 
         },
         {
           path:'update_assignment/:id',
