@@ -1,12 +1,16 @@
 
-
-
-
+import { useContext } from "react";
 import toast from "react-hot-toast";
+import { AuthContext } from "../../Provider/Authprovider";
 
 
 
 const Create_Assignment = () => {
+   
+    const {userr}=useContext(AuthContext)
+	const email=userr?.email
+	console.log(email)
+
     
  
 
@@ -22,7 +26,7 @@ const Create_Assignment = () => {
         const difficulty_level= form.difficulty_level.value;
         const thumbnail_url = form.thumbnail_url.value;
 
-        const newproduct = { title,   description,  marks,  due_date,  thumbnail_url ,difficulty_level}
+        const newproduct = { title,   description,  marks,  due_date,  thumbnail_url ,difficulty_level, email}
         console.log(newproduct);
 
         const  toastId =toast.loading('ADD Assignment...')

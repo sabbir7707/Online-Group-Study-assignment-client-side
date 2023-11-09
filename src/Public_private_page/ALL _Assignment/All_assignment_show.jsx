@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 
 import toast from "react-hot-toast";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/Authprovider";
 
 const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
+  const {userr}=useContext(AuthContext)
+  const email=userr?.email
+  console.log("card mail ",card.email);
+
 
 
 
@@ -78,8 +84,14 @@ const All_assidnment_sgow = ({ card, prodictess, setprodictess }) => {
                   <Link to={`/view_assignment/${_id}`} >
                     <div className="badge badge-outline">view</div>
                   </Link>
-                  <button onClick={() => handeleDelete(_id)} className="badge badge-outline">DELETE</ button>
+                  {
+                    card?.email == email?
+                    <button  onClick={() => handeleDelete(_id)} className="badge badge-outline">DELETE</ button>
+                    :
+                    <button  onClick={() => toast("You are not the real owner of this assignment")} className="badge badge-outline">DELETE</ button>
+                   
 
+                  }
                 </div>
 
               </div>

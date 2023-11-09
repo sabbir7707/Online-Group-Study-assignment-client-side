@@ -1,8 +1,16 @@
 
+import { useContext } from "react";
 import toast from "react-hot-toast";
+import { AuthContext } from "../../Provider/Authprovider";
 const Take_assignment = () => {
+    const {userr} = useContext(AuthContext)
+    console.log(userr?.email);
+    const email=userr?.email
 
+
+    
     const handelAddproduct= event => {
+       
         
         event.preventDefault();
         const form = event.target;
@@ -11,7 +19,7 @@ const Take_assignment = () => {
         const textarea= form.textarea.value;
       
 
-        const newproduct = { pdf_link,  textarea }
+        const newproduct = { pdf_link,  textarea, email }
         console.log(newproduct);
 
         const  toastId =toast.loading(' submit Assignment...')

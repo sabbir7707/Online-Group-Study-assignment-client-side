@@ -8,7 +8,7 @@ const Mainroute = () => {
         
             <MainLayout>
              <Outlet></Outlet>
-             <Footer></Footer>
+            <Footer></Footer> 
             </MainLayout>
         
     );

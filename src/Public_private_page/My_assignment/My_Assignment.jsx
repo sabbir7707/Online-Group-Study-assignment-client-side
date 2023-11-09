@@ -1,6 +1,19 @@
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../Provider/Authprovider";
 
 
 const My_Assignment = () => {
+	const {userr}=useContext(AuthContext)
+	const [ass,setAss]=useState()
+	const email=userr?.email
+	console.log(email)
+
+	useEffect(() => {
+        fetch(`http://localhost:5000/app/v1/addassignment?email=${email}`)
+            .then(res => res.json())
+            .then(data => setAss(data))
+    }, []);
+	console.log(ass)
     return (
         <div>
                 
